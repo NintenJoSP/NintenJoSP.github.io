@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ethernet</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Ethernet and Its History</h1>
+        <nav>
+            <h3>Navigation</h3>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#history">History</a></li>
+                <ul>
+                    <li><a href="#aloha">The Aloha Network</a></li>
+                    <li><a href="#metcalfe">Work of Bob Metcalfe</a></li>
+                    <li><a href="#xerox">Xerox and Patents</a></li>
+                </ul>
+                <li><a href="#ethernet">What Is Ethernet?</a></li>
+                <li><a href="#works">How Ethernet Works</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2 id="intro">Introduction</h2>
+        <p>Ethernet is the bridge that is used to connect the physical layer to the data link layer. Officially created
+            in May 1973 by Bob Metcalfe, Ethernet is the most common and popular LAN device used in the world (Spurgeon,
+            2000). Over the years, Ethernet has evolved and been adjusted to fit the needs of the ever shifting digital
+            world however it has always maintained its primary function of allowing digital networks to be established
+            and grow.</p>
+        <p>This report will give a history on how the Ethernet came to be, how it’s evolved over the years, as well as
+            give some explanation on what it is and how it works.</p>
+        <h2 id="history">History</h2>
+        <h3 id="aloha">The Aloha Network</h3>
+        <p>Prior to the official creation of the Ethernet in 1973, there was an earlier version created at the
+            University of Hawaii in the late 1960’s that worked on similar principles. Norman Abramson and his
+            colleagues designed the system for communicating between the different Hawaiian Islands.</p>
+        <p>The Aloha protocol, more commonly addressed as pure Aloha (Spurgeon, 2000), would allow a station to send a
+            signal at will and then, when the other device received the data, it would send back a confirmation message
+            indicating
+            that it was delivered successfully. If the acknowledgement wasn’t received back, then if would attempt to
+            send the data again after a random delay under the safe assumption that the data had been corrupted during
+            transmission and not received properly. This is also the basis in collision protection that is still used
+            when sending data over the Internet today.</p>
+        <p>Abramson and his team would continue to fine tune the Aloha system over the years and they are credited as
+            the creators of LAN’s as we know them today.</p>
+        <h3 id="metcalfe">Work of Bob Metcalfe</h3>
+        <p>Bob Metcalfe heard about the Aloha Protocol and came up with methods to improve on how the information was
+            sent. The main improvement he made was on how the computers noticed that a collision of data had happened.
+            To attempt to prevent this from happening, Metcalfe made it so the system would attempt to see if another
+            system was sending data to them prior to sending any data itself. Finally, he made it so multiple locations
+            could access the same channel remotely. All of these together, are what lead to the Ethernet Protocol being
+            called Carrier Sense Multiple Access with Collision Detect or CSMA/CD (Spurgeon, 2000).</p>
+        <h3 id="xerox">Xerox and Patents</h3>
+        <p>Metcalfe and his partners tested the prototype version of the Ethernet in 1972 at Xerox Alto to connect the
+            systems servers and laser printers. In July 1977 and 1978, Xerox would file to receive patents on the
+            Ethernet design and held exclusive rights to the design until 1980 when Xerox, DEC and Intel worked together
+            to standardize the system for wider commercial use and, the Institute of Electrical and Electronics
+            Engineers (IEEE) would convince them it was in the benefit of all to have it become an open network standard
+            so as to not limit the evolution of computer technology (Spurgeon, 2000).</p>
+        <p>In 1982, Xerox officially gave up their trademark on Ethernet as a name making Ethernet the first open LAN
+            standard in the world and was partially important in paving the way for a lot of computer technologies
+            following suite as companies started to realize the importance of the world being able to use this
+            technology rather than have it limited and piecemealed between corporations.</p>
+        <h2 id="ethernet">What Is Ethernet?</h2>
+        <p>While we in the public will tend to call it Ethernet out of simplicity, the official term used for Ethernet
+            is 802.3. This is done by IEEE to not appear to be directly affiliated with creators of technology as the
+            idea behind the organization is that any standards they approve are meant for everyone and shouldn’t be
+            owned by a specific company. </p>
+        <p>Referring to Ethernet as 802.3 has an additional benefit where, when improvements on the Ethernet had been
+            made, they didn’t need to change what the product was called (figure 1). As such, even though we still call
+            what Xerox has developed “Ethernet”, it is not the exact same system that was made by Metcalfe all those
+            years ago. Ethernet has incorporated developments in technology like twisted-pairs (802.3i in 1990), fiber
+            optics (802.3j in 1993) and Link aggregation for parallel links (802.3ad in 2000). The capabilities of
+            Ethernet has improved drastically over the last few decades since it was first thought up however it still
+            has the same framework that was created all those years ago.</p>
+        <figure>
+            <img src="History.png" width="700" alt="History of Ethernet">
+            <figcaption>A table displaying the history of Ethernet and its standards. Image retrieved from Semantic
+                Scholar.</figcaption>
+        </figure>
+        <p>Ethernet is part of the Data link layer which is important for data transmission and reception. The name
+            Ethernet was chosen in reference to “luminiferous ether” which, at the time, was how it was believed
+            electromagnetic waves traversed space (Spurgeon, 2000).</p>
+        <h2 id="works">How Ethernet Works</h2>
+        <p>As mentioned in the section above, Ethernet has changed its form slightly over the years. While the physical
+            elements have changed over time, the overall method of data transmission has remained constant in that the
+            data is transferred via a cable. Originally this was done with coaxial cables but, as technology improved,
+            the data is now being sent with fiber optic cables.</p>
+        <p>This has drastically increased the potential data transmission speed. In 1973, when Bob Metcalfe was first
+            designing the idea, the top capability of Ethernet was only 2.94 Mbps. Even the official original standard
+            produced by DIX was only for 10 Mbps which, while considered extremely fast at the time, is a shadow of the
+            current speeds that are up to 100 Gbps (while that is the max speed, it’s still mostly at the 10 Gbps as the
+            infrastructure is expanded to accommodate the improved capabilities which is still tenfold the possibility
+            of the original patent).</p>
+        <p>On the Physical Layer side, Ethernet uses waves (either electromagnetic for older cables or light waves for
+            fiber optics) to pass the information from one device to another.</p>
+        <p>On the Data Link Layer side, Ethernet will check to see if said information has been received by sending a
+            ping back to the original machine to inform them that the package has been received successfully. If this
+            ping is not received, then the sender will attempt to send the information again assuming that the data had
+            been lost either through a collision with data heading the other way or some other form of data corruption
+            like attenuation. The Data Link Layer will have them wait a random amount of time to try and prevent a
+            repeat error for if it was caused by a collision as, that way, the other signal will hopefully be sent at a
+            different time and will not have a repeat collision.</p>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>It is no exaggeration to say that Ethernet, and its similar technologies, are heavily responsible for the
+            explosive acceleration into The Fourth Industrial Revolution that our world is currently experiencing as
+            technology continues to develop at an exponential rate. As further advancement in computers happen, the
+            physical aspect of the Ethernet may be less and less important as we move to technologies like WiFi and
+            Starlink, however, the Data Link aspect of Ethernet will likely always be present in some form going forward
+            as it is the foundation that the Data Link layer was build off of.</p>
+    </main>
+    <footer>
+        <a href="citations.html">Citations and Group Signoff</a>
+    </footer>
+</body>
+
+</html>
